@@ -1,4 +1,4 @@
-#ANATOMY OF A GGPLOT2 OBJECT ----
+#ANATOMY OF A GGPLOT2 OBJECT
 library(tidyverse)
 library(lubridate)
 bike_orderlines_tbl <- read_rds("00_data/bike_sales/data_wrangled/bike_orderlines.rds")
@@ -33,6 +33,6 @@ g <- revenue_by_year_tbl %>%
     ) +
     theme_bw() +
     theme(legend.position = "right", legend.direction = "vertical")
-g # whats g ?
+g # whats g?
 
 View(g)
